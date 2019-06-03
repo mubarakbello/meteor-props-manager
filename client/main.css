@@ -1,0 +1,435 @@
+:root {
+  --primary-color:  #17a2b8;
+  --secondary-color: #6d7fcc;
+  --input-padding-x: .75rem;
+  --input-padding-y: .75rem;
+}
+
+/* html, body {
+  height: 100vh;
+} */
+
+.Login-page {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.4)), url(bg-1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.Login-page {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Login-page .banner-text {
+  width: calc(70vw - 50px);
+  padding: 20px;
+  color: #fafafa;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+
+  .Login-page {
+    padding: 25px;
+  }
+
+  .Login-page .banner-text {
+    width: calc(50vw - 25px);
+  }
+
+  .Login-page .login-form {
+    width: calc(50vw - 25px);
+  }
+}
+
+@media (max-width: 576px) {
+  .Login-page {
+    padding: 30px;
+    display: block;
+  }
+
+  .Login-page .banner-text {
+    width: 100% !important;
+  }
+
+  .Login-page .login-form {
+    width: 100% !important;
+  }
+}
+
+.banner-text img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 3px solid #fafafa;
+}
+
+.banner-text h1 {
+  font-size: 80px;
+}
+
+.banner-text p {
+  font-size: 30px
+}
+
+.Login-page .login-form {
+  min-width: 300px;
+  width: calc(30vw - 50px);
+  background: #fff;
+  border-radius: .5rem;
+}
+
+.login-form .form {
+  padding: 40px 20px;
+}
+
+.login-form .brand {
+  text-align: center;
+  padding: 20px;
+}
+
+.signup-option {
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgb(245, 245, 245);
+  padding: 20px;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group input {
+  background-color: #e8f0fe;
+}
+
+.form-label-group > input,
+.form-label-group > label {
+  height: initial;
+  padding: var(--input-padding-y) var(--input-padding-x);
+}
+
+.form-label-group > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0; /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+.form-label-group input::placeholder {
+  color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+  padding-bottom: calc(var(--input-padding-y) / 3);
+}
+
+.form-label-group input:not(:placeholder-shown) ~ label {
+  padding-top: calc(var(--input-padding-y) / 3);
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  font-size: 12px;
+  color: #777;
+}
+
+
+.img-brand {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.heading {
+  padding: 0 1rem;
+}
+
+.nav-head {
+  padding-top: 15px;
+  margin-bottom: 0;
+}
+
+.nav .nav-li {
+  margin-right: 15px;
+  height: fit-content;
+  padding: 10px 0px;
+}
+
+.nav .nav-li:last-child {
+  margin-right: 0;
+}
+
+.nav .nav-li .nav-btn {
+  color: #777;
+  padding: 10px 0px;
+}
+
+.nav .nav-li .nav-btn.active {
+  color: #3a3f48;
+  border-bottom: 3px solid #4db4c6;
+}
+
+.nav .nav-li .nav-btn:hover {
+  text-decoration: none;
+  color: #495057;
+}
+
+.switcher {
+  margin-top: 15px;
+}
+
+.property {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 2px 3px 15px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  height: 300px;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.property .property-thumbnail {
+  width: 150px;
+  height: 180px;
+  padding: 15px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.property-content,
+.property-thumbnail,
+.property-value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.property-thumbnail img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px dotted rgba(0, 0, 0, 0.1);
+}
+
+.property-content {
+  height: 70px;
+  overflow-y: auto;
+}
+
+.property-value {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fafafa;
+  height: 50px;
+}
+
+.property-content,
+.property-value {
+  padding: 0px 10px;
+}
+
+@media (min-width: 576px) {
+  .container.switcher > .container > .row {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+
+  .nav .nav-li {
+    margin-right: 35px;
+    padding: 15px 0px;
+  }
+
+  .nav .nav-li .nav-btn {
+    padding: 15px 0px;
+  }
+}
+
+.flip-card {
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #4db4c6;
+  color: #fafafa;
+  transform: rotateY(180deg);
+}
+
+/* PROPERTY DETAILS MODAL STYLES */
+.property-details-modal {
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+  display: none;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2050;
+  transition: .3s all;
+}
+
+.property-details-modal.modal-open {
+  display: flex;
+  opacity: 1;
+  animation: pulse .6s ease-in-out;
+}
+
+.property-details-modal .property-details-modal__body {
+  background-color: #fafafa;
+  border-radius: 0.3rem;
+  max-height: 50%;
+  overflow-y: auto;
+  padding: 30px 0px;
+  width: 60%;
+}
+
+.aside {
+  padding: 0px 20px;
+}
+
+.aside .thumbnail {
+  width: 200px;
+  height: 245px;
+  padding: 15px 0px 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aside .thumbnail img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  border: 1px dotted rgba(0, 0, 0, 0.1);
+}
+
+.aside .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .property-details-modal .property-details-modal__body {
+    width: 70%;
+  }
+}
+
+@media (max-width: 576px) {
+  .property-details-modal .property-details-modal__body {
+    /* padding: 30px 15px; */
+    width: 90%;
+  }
+}
+
+@media (max-height: 992px) {
+  .property-details-modal .property-details-modal__body {
+    max-height: 70%;
+  }
+}
+
+@media (max-height: 576px) {
+  .property-details-modal .property-details-modal__body {
+    max-height: 80%;
+  }
+}
+/* END OF PROPERTY DETAILS MODAL STYLES */
+
+.custom-404-page,
+.custom-loading {
+  align-items: center;
+  background: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.custom-404-page > div,
+.custom-loading > div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.15); }
+  50% { transform: scale(1); }
+  75% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes fade-in {
+  from {opacity: 0; transform: scale(.7,.7)}
+  to {opacity: 1;}
+}
+
+@keyframes fade-out {
+  from {opacity: 0; transform: scale(1.3,1.3)}
+  to {opacity: 1; transform: scale(1,1)}
+}
+
+.fade-in-element {
+  animation: fade-in 1.4s;
+}
+
+.fade-out-element {
+  animation: fade-out 1.4s;
+}
