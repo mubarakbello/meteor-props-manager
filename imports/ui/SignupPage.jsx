@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import { Accounts } from 'meteor/accounts-base';
 
-import Logo from '/imports/ui/images/images.png';
+import Logo from './images/images.png';
 
 class SignupPage extends Component {
   state = {}
@@ -61,6 +61,7 @@ class SignupPage extends Component {
                   placeholder='Email address'
                   aria-describedby="emailHelp"
                   ref={(c) => {this.email = c}}
+                  autoComplete="email"
                 />
                 <label htmlFor="email" style={{color: '#125266'}}>Email address</label>
               </div>
@@ -71,6 +72,7 @@ class SignupPage extends Component {
                   id="password" required
                   placeholder="Password"
                   ref={(c) => {this.password = c}}
+                  autoComplete="new-password"
                 />
                 <label htmlFor="password" style={{color: '#125266'}}>Password</label>
               </div>
@@ -81,6 +83,7 @@ class SignupPage extends Component {
                   id="confirmPassword" required
                   placeholder="Confirm Password"
                   ref={(c) => {this.confirmPassword = c}}
+                  autoComplete="new-password"
                 />
                 <label htmlFor="confirmPassword" style={{color: '#125266'}}>Confirm Password</label>
               </div>

@@ -1,9 +1,9 @@
 import React, {Component} from "react";
 import { Meteor } from 'meteor/meteor';
 import Modal from './Modal';
-import Thumbnail1 from '/imports/ui/images/thumb.jpg';
-import Thumbnail2 from '/imports/ui/images/thumb-2.jpg';
-import Thumbnail3 from '/imports/ui/images/thumb-3.jpg';
+import Thumbnail1 from './images/thumb.jpg';
+import Thumbnail2 from './images/thumb-2.jpg';
+import Thumbnail3 from './images/thumb-3.jpg';
 
 const thumbnails = [Thumbnail1, Thumbnail2, Thumbnail3];
 

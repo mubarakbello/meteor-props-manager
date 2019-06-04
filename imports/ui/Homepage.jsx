@@ -4,7 +4,7 @@ import MyProperties from './MyProperties';
 import AddProperty from './AddProperty';
 import ExploreProperties from './ExploreProperties';
 
-import Logo from '/imports/ui/images/images.png';
+import Logo from './images/images.png';
 
 class Homepage extends Component {
   constructor(props) {

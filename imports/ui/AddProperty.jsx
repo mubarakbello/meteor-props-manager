@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Meteor } from 'meteor/meteor';
-// import { insertProperty } from '/imports/api/properties/methods';
 import {insertProperty} from '../api/properties/methods'
 
 class AddProperty extends Component {
@@ -42,7 +41,7 @@ class AddProperty extends Component {
               <form onSubmit={this.handleSubmit}>
                 <div className="form-label-group">
                   <input
-                    type="text" autoFocus
+                    type="text"
                     className="form-control"
                     id="name" required
                     placeholder='Property name'
@@ -81,7 +80,3 @@ class AddProperty extends Component {
 }
 
 export default AddProperty
-
-// import React, { Component } from 'react';
-// import { Link, Redirect } from 'react-router-dom';
-// import Accounts from 'meteor/accounts-base';

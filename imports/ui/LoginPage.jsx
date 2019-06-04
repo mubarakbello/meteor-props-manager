@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import Accounts from 'meteor/accounts-base';
 
-import Logo from '/imports/ui/images/images.png';
+import Logo from './images/images.png';
 
 class LoginPage extends Component {
   state = {}

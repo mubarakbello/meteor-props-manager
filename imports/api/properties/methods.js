@@ -1,6 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 import { ValidatedMethod } from 'meteor/mdg:validated-method';
-import Properties from '/imports/api/properties/properties';
+import Properties from './properties';
 
 
 export const insertProperty = new ValidatedMethod({

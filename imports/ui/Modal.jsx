@@ -30,7 +30,7 @@ class Modal extends Component {
         alert(`Error ${err.error} occurred due to: ${err.reason}, res: ${res}`);
         throw err;
       } else {
-        console.log(`Property updated successfully ${res}`);
+        alert(`Property updated successfully ${res}`);
         this.handleEdit();
       }
     })
