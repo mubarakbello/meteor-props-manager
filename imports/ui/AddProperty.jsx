@@ -69,7 +69,7 @@ class AddProperty extends Component {
                   />
                   <label htmlFor="amount" style={{color: '#125266'}}>Property amount</label>
                 </div>
-                <button type="submit" className="btn w-100 btn-info mt-4">Add Property</button>
+                <button type="submit" className="btn w-100 btn-info mt-4 mb-4">Add Property</button>
               </form>
             </div>
           </div>

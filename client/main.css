@@ -5,10 +5,6 @@
   --input-padding-y: .75rem;
 }
 
-/* html, body {
-  height: 100vh;
-} */
-
 .Login-page {
   background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.4)), url(bg-1.jpg);
   background-size: cover;
@@ -175,6 +171,7 @@
 
 .nav .nav-li .nav-btn {
   color: #777;
+  font-size: small;
   padding: 10px 0px;
 }
 
@@ -259,6 +256,7 @@
 
   .nav .nav-li .nav-btn {
     padding: 15px 0px;
+    font-size: initial;
   }
 }
 

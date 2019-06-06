@@ -59,7 +59,7 @@ class Homepage extends Component {
         <div className="navbar-expand-md navbar-light bg-light heading">
           <div className="container">
             <h3 className="nav-head">Dashboard</h3>
-            <ul className="nav" style={{ justifyContent: "space-between" }}>
+            <ul className="nav" style={{ justifyContent: "space-between", flexWrap: "wrap-reverse" }}>
               <div className="nav">
                 <li className="nav-li">
                   <a
