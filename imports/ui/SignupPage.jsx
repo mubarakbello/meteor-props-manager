@@ -48,7 +48,7 @@ class SignupPage extends Component {
         </div>
         <div className="login-form order-md-1 fade-in-element">
           <div className="form">
-            <h3 className="text-center" style={{color: '#125266'}}>Hey! Nice to have you here</h3>
+            <h3 className="text-center" style={{color: '#125266'}}>Hey! Nice to have you here!</h3>
             <div className="text-center" style={{marginTop: '-5px', marginBottom: '15px'}}>
               <small style={{color: '#125266', fontSize: 'large'}}>Sign up now</small>
             </div>
