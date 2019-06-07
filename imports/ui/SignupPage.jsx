@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import { Accounts } from 'meteor/accounts-base';
 
-import Logo from './images/images.png';
+const Logo = 'images.png';
 
 class SignupPage extends Component {
   state = {}

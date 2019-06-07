@@ -1,11 +1,7 @@
 import React, {Component} from "react";
 import { Meteor } from 'meteor/meteor';
 import Modal from './Modal';
-import Thumbnail1 from './images/thumb.jpg';
-import Thumbnail2 from './images/thumb-2.jpg';
-import Thumbnail3 from './images/thumb-3.jpg';
-
-const thumbnails = [Thumbnail1, Thumbnail2, Thumbnail3];
+const thumbnails = ['thumb.jpg', 'thumb-2.jpg', 'thumb-3.jpg'];
 
 class Property extends Component {
 
